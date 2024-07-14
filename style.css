@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.work-sans-font {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  /* Sheared styles  */
+.display-flex{
+    display: flex;
+}
+.section-title{
+  font-size: 4rem;
+}
+.descreption{
+  font-size: 1rem;
+  color: rgb(114, 114, 114);
+}
+.thim-color{
+  color: rgb(255, 144, 14);
+}
+/* dark1 */
+.text-black{
+  color: rgb(19, 19, 19);
+}
+/* dark02  */
+.text-gray{
+   color: rgb(66, 66, 66);
+}
+/* dark03  */
+.text-light-gray{
+  color: rgb(114, 114, 114);
+}
+.bg-lite{
+  background-color: rgba(255, 144, 14, 0.1);
+  
+}
+/* header styles  */
+
+  /* nav bar related styles  */
+.nav-bar{
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-item{
+    list-style: none;
+    margin-left: 30px;
+}
+.nav-links{
+    text-decoration: none;
+}
+.nav-bar, .banner{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.brand{
+  font-size: 3em;
+  font-weight: bold;
+}
+.bannre-content{
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.banner-title{
+  font-size: 4rem;
+  font-weight: bold;
+}
+  .btn-primary{
+    background-color: rgb(255, 144, 14);
+    padding: 20px 25px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: white;
+    border-radius: 8px;
+    border: 0;
+}
+
+.background-image{
+  width: 100%;
+}
+/* main section starts here  */
+main{
+  max-width: 1440px;
+  margin: 0 auto;
+
+}
+main > section{
+  margin-top: 130px;
+}
+.team-img-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+/* Quick list Of Features */
+.team{
+  align-items: center;
+}
+.featurs{
+  margin-left: 75px;
+  max-width: 500px;
+}
+.fact-card{
+  border: 1px solid rgb(255, 144, 14);
+  height: 242px;
+  width: 242px;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.fact-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 auto;
+}
+.fact-number{
+  font-size: 2.8rem;
+  font-weight: 600px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+
+}
+.fact-name{
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 10px;
+}
+.sponsor-info{
+  max-width: 540px;
+  margin: 50px auto;
+  text-align: center;
+}
+.sposor-companis{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  max-width: 1440px;
+  margin: 0 auto;
+  filter: grayscale(100%);
+}
+
+/* responcive media query  */
+@media screen and (max-width:576px) {
+  .nav-bar, 
+  .nav-links,
+  .team{
+    flex-direction: column;
+  }
+  .team-img-container,
+  .fact-container,
+  .sposor-companis{
+    grid-template-columns: repeat(1,1fr);
+   
+  }
+  .fact-container{
+    justify-content: center;
+    gap: 24px;
+  }
+  .featurs{
+    margin-left: 20px;
+  }
+  .sposor-companis{
+    justify-content: center;
+    gap: 20px;
+  }
+  
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .team{
+    flex-direction: column;
+  }
+  .oue-featurs{
+    margin: 50px;
+  }
+  .sposor-companis, .fact-container{
+    grid-template-columns: repeat(2 ,1fr);
+    gap: 50px;
+    justify-self: center;
+  }
+}
